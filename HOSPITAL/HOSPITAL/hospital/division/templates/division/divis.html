@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+</head>
+<body>
+    <form action="{% url 'divisionInsert' %}" method="post">
+        {% csrf_token %}
+        <!-- <label for="">Divisions</label>
+        <select name="" id="">
+            <option value="">--Select--</option>
+            <option value="">--Select--</option>
+        </select> -->
+        <label for="">Division</label>
+        <input type="text" name="divisionName"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

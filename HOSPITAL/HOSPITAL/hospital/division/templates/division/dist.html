@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+</head>
+<body>
+    <form action="{% url 'districtInsert' %}" method="post">
+        {% csrf_token %}
+        <label for="">Division</label>
+        <select name="" >
+            <option value="">--Select--</option>
+            {% for i in dv %}
+            <option value="">{{i.divisionName}}</option>
+            {% endfor %}
+        </select><br>
+        <label for="">District</label>
+        <input type="text" name="districtName"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
